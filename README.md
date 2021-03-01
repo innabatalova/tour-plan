@@ -11,5 +11,3 @@ Tour Plan
 Куратор
 
 Проненко Артем
-
-test repo
