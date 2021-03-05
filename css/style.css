@@ -513,10 +513,13 @@ template {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    min-width: 95%;
+    max-width: 90%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
+  }
+  .navbar-top {
+    padding: 28px 0;
   }
   .navbar-top__menu-button {
     display: -webkit-box;
