@@ -2,6 +2,8 @@
   background-color: #fff
 
   &-top
+    display: flex
+    align-items: center
     justify-content: space-between
     padding-top: 40px
     padding-bottom: 40px
@@ -17,10 +19,11 @@
     background-color: $dark
 
   &-menu
+    display: flex
+    align-items: center
     list-style-type: none
     margin: 0
     padding: 31px 0
-    +alignment
     justify-content: space-between
     color: $light
 
@@ -60,7 +63,8 @@
     background-color: $primary
 
 .user
-  +alignment
+  display: flex
+  align-items: center
   text-decoration: none
 
   &__avatar
