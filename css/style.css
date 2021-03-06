@@ -529,12 +529,24 @@ template {
 }
 
 .hotel-info__offer {
+  display: block;
+  width: 70px;
+  height: 20px;
   margin-left: 14px;
   margin-top: 4px;
 }
 
 .hotel-info__description {
   margin: 0;
+}
+
+.hotel-info__carryover {
+  white-space: nowrap;
+}
+
+.hotel-info__rating {
+  width: 65px;
+  height: 45px;
 }
 
 .hotel-name {
@@ -590,6 +602,10 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+}
+
+.rating__five {
+  font-size: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -654,6 +670,9 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .breadcrumb-list {
+    padding-bottom: 0;
   }
   .stars {
     -ms-flex-preferred-size: auto;
