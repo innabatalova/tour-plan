@@ -3,10 +3,10 @@ const swiper = new Swiper('.swiper-container', {
 
   loop: true,
 
-  // keyboard: {
-  //   enabled: true,
-  //   onlyInViewport: false,
-  // },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 
   // Navigation arrows
   navigation: {

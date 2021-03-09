@@ -655,7 +655,7 @@ template {
   background-color: transparent;
 }
 
-.slider-button__next {
+.slider-button-next {
   right: 18px;
   background-image: url(../image/arrow-next.svg);
   background-repeat: no-repeat;
@@ -663,11 +663,15 @@ template {
   background-size: 10px;
 }
 
-.slider-button__next:hover {
+.slider-button-next:hover {
   background-image: url(../image/arrow-hover.svg);
 }
 
-.slider-button__prev {
+.slider-button-next:focus {
+  outline: none;
+}
+
+.slider-button-prev {
   left: 18px;
   background-image: url(../image/arrow-prev.svg);
   background-repeat: no-repeat;
@@ -675,12 +679,16 @@ template {
   background-size: 10px;
 }
 
-.slider-button__prev:hover {
+.slider-button-prev:hover {
   background-image: url(../image/arrow-hover.svg);
   -webkit-transform-origin: 50% 25% 0;
           transform-origin: 50% 25% 0;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.slider-button-prev:focus {
+  outline: none;
 }
 
 @media (max-width: 1200px) {
