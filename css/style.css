@@ -791,11 +791,13 @@ template {
     width: 99px;
   }
   .swiper-container {
-    height: 179px;
     padding-top: 18px;
   }
+  .swiper-slide {
+    height: 179px;
+  }
   .slider {
-    width: 100%;
+    width: 97%;
   }
 }
 /*# sourceMappingURL=style.css.map */
