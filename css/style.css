@@ -616,7 +616,7 @@ template {
   border-radius: 8px;
 }
 
-.swiper-container:after {
+.swiper:after {
   position: absolute;
   content: '';
   width: 100%;
@@ -778,11 +778,24 @@ template {
             order: -1;
     margin-left: 0;
   }
+  .slider {
+    width: 700px;
+  }
 }
 
 @media (max-width: 576px) {
+  .hotel-info {
+    padding-bottom: 18px;
+  }
   .logo {
     width: 99px;
+  }
+  .swiper-container {
+    height: 179px;
+    padding-top: 18px;
+  }
+  .slider {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
