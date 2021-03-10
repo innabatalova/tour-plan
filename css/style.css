@@ -581,7 +581,7 @@ template {
           justify-content: space-between;
 }
 
-.hotel-right {
+.hotel-coordinates {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -634,7 +634,7 @@ template {
 .swiper-container {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -654,14 +654,15 @@ template {
 
 .swiper-slide__img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 100%;
 }
 
 .slider {
-  position: relative;
   width: 728px;
+  height: 450px;
+  position: relative;
 }
 
 .slider-button {
@@ -854,11 +855,15 @@ template {
   width: 347px;
   height: 213px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
   }
 }
 
@@ -883,6 +888,30 @@ template {
     line-height: 15px;
   }
   .search__input {
+    width: 340px;
+  }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .hotel-coordinates {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .booking {
+    width: 340px;
+  }
+  .slider {
+    width: 100%;
+  }
+  .map {
     width: 340px;
   }
 }
@@ -952,7 +981,13 @@ template {
     margin-left: 0;
   }
   .slider {
-    width: 700px;
+    height: 350px;
+  }
+  .booking {
+    width: 340px;
+  }
+  .map {
+    width: 340px;
   }
 }
 
@@ -960,17 +995,34 @@ template {
   .hotel-info {
     padding-bottom: 18px;
   }
+  .hotel__slider {
+    height: 179px;
+  }
+  .hotel-coordinates {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .logo {
     width: 99px;
   }
   .swiper-container {
+    height: 179px;
     padding-top: 18px;
   }
-  .swiper-slide {
-    height: 179px;
+  .swiper-slide__img {
+    width: 96%;
+    min-height: 179px;
   }
-  .slider {
-    width: 97%;
+  .booking {
+    width: 96%;
+    min-height: 210px;
+    margin-bottom: 20px;
+  }
+  .map {
+    width: 96%;
+    min-height: 172px;
   }
 }
 /*# sourceMappingURL=style.css.map */
