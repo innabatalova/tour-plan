@@ -9,12 +9,20 @@ body {
   color: #333333;
 }
 
+a:hover {
+  color: #D3D3D3;
+}
+
 img {
   max-width: 100%;
 }
 
 button {
   cursor: pointer;
+}
+
+button:hover {
+  color: #D3D3D3;
 }
 
 .container {
