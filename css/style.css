@@ -638,7 +638,7 @@ template {
   border-radius: 8px;
 }
 
-.swiper:after {
+.swiper-container:after {
   position: absolute;
   content: '';
   width: 100%;
