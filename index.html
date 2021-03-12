@@ -146,40 +146,40 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="slider hotel__slider">
+          <div class="slider hotel-slider hotel__slider">
             <div class="swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">
+                <div class="swiper-slide hotel-slider__item">
                   <img
                     src="image/slide.jpg"
                     alt="slide 1"
                     class="swiper-slide__img"
                   />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide hotel-slider__item">
                   <img
                     src="image/slide-2.jpg"
                     alt="slide 2"
                     class="swiper-slide__img"
                   />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide hotel-slider__item">
                   <img
                     src="image/slide-3.jpg"
                     alt="slide 3"
                     class="swiper-slide__img"
                   />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide hotel-slider__item">
                   <img
                     src="image/slide-4.jpg"
                     alt="slide 4"
                     class="swiper-slide__img"
                   />
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide hotel-slider__item">
                   <img
                     src="image/slide-5.jpg"
                     alt="slide 5"
@@ -187,12 +187,12 @@
                   />
                 </div>
               </div>
-              <!-- /.swiper-container -->
+              <!-- /.swiper-wrapper-->
             </div>
 
             <!-- If we need navigation buttons -->
-            <button class="slider-button slider-button-prev"></button>
-            <button class="slider-button slider-button-next"></button>
+            <button class="slider-button slider-button__prev"></button>
+            <button class="slider-button slider-button__next"></button>
           </div>
           <!-- /.slider -->
           <div class="hotel-coordinates">
@@ -282,6 +282,49 @@
       <!-- /.newsletter-wrappep -->
     </section>
     <!-- /.newsletter -->
+    <section class="reviews">
+      <div class="reviews-container">
+        <h2 class="reviews-title">What people think about us</h2>
+        <!-- /.reviews-title -->
+        <div class="swiper-container reviews-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="image/reviews-avatar.jfif"
+                    alt="Photo: Megan Fox"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Megan Fox</h3>
+                  <!-- /.reviews-slider__username -->
+                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                  <div class="rating">
+                    <img src="image/star.svg" alt="star" />
+                    <img src="image/star.svg" alt="star" />
+                    <img src="image/star.svg" alt="star" />
+                    <img src="image/star.svg" alt="star" />
+                    <img src="image/star.svg" alt="star" />
+                  </div>
+                </div>
+                <!-- /.swiper-slide__profile -->
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <!-- /.swiper-wrapper -->
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- /.reviews-slider -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.reviews -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <!-- скрипты для яндекс карт -->
