@@ -1,5 +1,10 @@
 .reviews
+  position: relative
   padding: 40px 0 70px
+
+  &-container
+    width: 1074px
+    margin: auto
 
   &__title
     font-style: normal
@@ -71,6 +76,28 @@
       font-size: 10px
       line-height: 13px
       margin-bottom: 4px
+
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-size: 20px
+      background-position: center
+      border: none
+      background-color: transparent
+      cursor: pointer
+      z-index: 99
+
+      &--next
+        right: 0
+        background-image: url(../image/arrow-next-secondary.svg)
+
+      &--prev
+        left: 0
+        background-image: url(../image/arrow-prev-secondary.svg)
 
   &-slider
 
