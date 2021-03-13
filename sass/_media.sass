@@ -35,11 +35,14 @@
     &-grid
       flex-direction: column
 
-    &__slider
-      margin-bottom: 30px
+    &-slider
+
+      &__item
+        margin-bottom: 30px
 
     &-coordinates
       flex-direction: row
+      margin-top: 30px
 
   .booking
     width: 340px
@@ -95,6 +98,7 @@
     flex-basis: auto
 
   .hotel
+    padding: 23px 0 40px
 
     &-name
       flex-basis: 100%
@@ -116,6 +120,9 @@
       &__offer
         order: -1
         margin-left: 0
+
+    &-coordinates
+      margin-top: 20px
 
   .slider
     height: 350px
@@ -148,6 +155,7 @@
 
       &__button
         top: 32px
+
         &--prev
           left: 50%
           transform: translate(-50%, 0)
@@ -160,6 +168,7 @@
 
 @media ( max-width: 576px )
   .hotel
+    padding: 23px 0 40px
 
     &-info
       padding-bottom: 18px
@@ -217,3 +226,18 @@
 
     &-title
       max-width: 280px
+
+  .reviews
+
+    &-container
+      width: 281px
+
+    &__title
+      display: block
+      width: 245px
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      margin: 0 auto 42px

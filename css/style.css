@@ -962,7 +962,7 @@ template {
 }
 
 .reviews-container {
-  width: 1074px;
+  max-width: 1074px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -993,7 +993,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 730px;
+  max-width: 730px;
   margin: 45px auto 0;
   padding: 0 62px 30px;
   background-color: #fff;
@@ -1138,7 +1138,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .hotel__slider {
+  .hotel-slider__item {
     margin-bottom: 30px;
   }
   .hotel-coordinates {
@@ -1146,6 +1146,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 30px;
   }
   .booking {
     width: 340px;
@@ -1203,6 +1204,9 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+  .hotel {
+    padding: 23px 0 40px;
+  }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1227,6 +1231,9 @@ template {
         -ms-flex-order: -1;
             order: -1;
     margin-left: 0;
+  }
+  .hotel-coordinates {
+    margin-top: 20px;
   }
   .slider {
     height: 350px;
@@ -1278,6 +1285,9 @@ template {
 }
 
 @media (max-width: 576px) {
+  .hotel {
+    padding: 23px 0 40px;
+  }
   .hotel-info {
     padding-bottom: 18px;
   }
@@ -1331,6 +1341,19 @@ template {
   }
   .subscribe-title {
     max-width: 280px;
+  }
+  .reviews-container {
+    width: 281px;
+  }
+  .reviews__title {
+    display: block;
+    width: 245px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    margin: 0 auto 42px;
   }
 }
 /*# sourceMappingURL=style.css.map */
