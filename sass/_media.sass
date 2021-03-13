@@ -13,8 +13,8 @@
   .logo
     width: 132px
 
-  &__search
-    margin-left: auto
+    &__search
+      margin-left: auto
 
   .navbar
     &-top
@@ -50,8 +50,13 @@
   .map
     width: 340px
 
-  &-wrappep
-    max-width: 700px
+    &-wrappep
+      max-width: 700px
+
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
 
 @media ( max-width: 768px )
   .container
@@ -74,12 +79,12 @@
           justify-content: space-between
           flex-direction: column
           border: none
-    .menu
-      &-button
-        &__line
-          width: 16px
-          height: 1px
-          background-color: $text-color
+  .menu
+    &-button
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
 
   .breadcrumb
 
@@ -129,14 +134,48 @@
       flex-direction: column
       align-items: flex-start
 
+  .reviews
+    padding-bottom: 0
+
+    &-slider
+
+      &__item
+        padding: 0 30px 30px
+        &:after
+          display: none
+        &:before
+          display: none
+
+      &__button
+        top: 32px
+        &--prev
+          left: 50%
+          transform: translate(-50%, 0)
+          margin-left: -65px
+
+        &--next
+          left: 50%
+          transform: translate(-50%, 0)
+          margin-left: 65px
+
 @media ( max-width: 576px )
   .hotel
 
     &-info
       padding-bottom: 18px
 
-    &__slider
+    &-slider
       height: 179px
+      padding-top: 18px
+
+      &__img
+        width: 96%
+        min-height: 179px
+
+      &__item
+
+        &:after
+          width: 96%
 
     &-coordinates
       flex-direction: column
@@ -144,17 +183,8 @@
   .logo
     width: 99px
 
-  .swiper
-
-    &-container
-      height: 179px
-      padding-top: 18px
-
-    &-slide
-
-      &__img
-        width: 96%
-        min-height: 179px
+  .slider
+    height: 179px
 
   .booking
     width: 96%

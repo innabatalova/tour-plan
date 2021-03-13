@@ -4,7 +4,8 @@
 
   &-container
     width: 1074px
-    margin: auto
+    margin: 0 auto
+    overflow: hidden
 
   &__title
     font-style: normal
@@ -16,6 +17,9 @@
     margin-bottom: 70px
 
   &-slider
+    position: relative
+
+    &__slide
 
     &__item
       position: relative
@@ -72,10 +76,19 @@
 
     &__date
       font-style: normal
-      font-weight: ormal
+      font-weight: normal
       font-size: 10px
       line-height: 13px
       margin-bottom: 4px
+
+    &__text
+      max-width: 537px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      margin: auto
 
     &__button
       position: absolute
@@ -98,14 +111,3 @@
       &--prev
         left: 0
         background-image: url(../image/arrow-prev-secondary.svg)
-
-  &-slider
-
-    &__text
-      max-width: 537px
-      font-style: normal
-      font-weight: normal
-      font-size: 12px
-      line-height: 160%
-      text-align: justify
-      margin: auto
