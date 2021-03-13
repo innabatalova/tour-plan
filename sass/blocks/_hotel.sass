@@ -57,6 +57,46 @@
     height: 100%
     border-radius: 8px
     overflow: hidden
+    position: relative
+    width: 728px
+    height: 450px
+
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 99
+      width: 30px
+      height: 30px
+      border: none
+      cursor: pointer
+      background-color: transparent
+
+      &--next
+        right: 18px
+        background-image: url(../image/arrow-next.svg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 10px
+
+        &:hover
+          background-image: url(../image/arrow-hover.svg)
+        &:focus
+          outline: none
+
+      &--prev
+        left: 18px
+        background-image: url(../image/arrow-prev.svg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 10px
+
+        &:hover
+          background-image: url(../image/arrow-hover.svg)
+          transform-origin: 50% 25% 0
+          transform: rotate(180deg)
+        &:focus
+          outline: none
 
     &__img
       width: 100%
@@ -106,48 +146,6 @@
 
   &__five
     font-size: 10px
-
-.slider
-  position: relative
-  width: 728px
-  height: 450px
-
-  &-button
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
-    z-index: 99
-    width: 30px
-    height: 30px
-    border: none
-    cursor: pointer
-    background-color: transparent
-
-    &__next
-      right: 18px
-      background-image: url(../image/arrow-next.svg)
-      background-repeat: no-repeat
-      background-position: center
-      background-size: 10px
-
-      &:hover
-        background-image: url(../image/arrow-hover.svg)
-      &:focus
-        outline: none
-
-    &__prev
-      left: 18px
-      background-image: url(../image/arrow-prev.svg)
-      background-repeat: no-repeat
-      background-position: center
-      background-size: 10px
-
-      &:hover
-        background-image: url(../image/arrow-hover.svg)
-        transform-origin: 50% 25% 0
-        transform: rotate(180deg)
-      &:focus
-        outline: none
 
 .booking
   color: $light

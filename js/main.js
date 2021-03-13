@@ -10,8 +10,8 @@ const hotelSlider = new Swiper('.hotel-slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button__next',
-    prevEl: '.slider-button__prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
   },
         
 
