@@ -997,8 +997,8 @@ template {
   line-height: 15px;
 }
 
-.packages__info--img {
-  padding-right: 16px;
+.packages__icon {
+  margin-right: 16px;
 }
 
 .packages__main {
@@ -1040,7 +1040,7 @@ template {
   border: none;
 }
 
-.packages-button__mashbutton {
+.packages__mashbutton {
   position: absolute;
   bottom: 30px;
   right: 21px;
