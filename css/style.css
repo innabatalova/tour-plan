@@ -865,11 +865,17 @@ template {
 }
 
 .packages-wrappep {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
   color: #ffffff;
-  overflow: hidden;
+  margin-bottom: 70px;
 }
 
 .packages-title {
+  margin-top: 40px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -880,6 +886,7 @@ template {
 
 .packages-item {
   position: relative;
+  overflow: hidden;
   border-radius: 8px;
 }
 
@@ -937,6 +944,7 @@ template {
       grid-template-columns: 1fr;
   background-color: #0A223D;
   padding: 40px 21px 25px 43px;
+  border-radius: 0 8px 8px 0;
 }
 
 .packages-item__mashmessage {
@@ -947,6 +955,7 @@ template {
       grid-template-columns: 1fr;
   background-color: #0A223D;
   padding: 30px 21px 20px 32px;
+  border-radius: 0 0 8px 8px;
 }
 
 .packages-item__text {
@@ -993,13 +1002,16 @@ template {
 }
 
 .packages__main {
-  border: 1px solid red;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 1 / span 2;
   width: 730px;
   height: 500px;
 }
@@ -1035,7 +1047,6 @@ template {
 }
 
 .packages__mash {
-  border: 1px solid black;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (1fr)[2];
@@ -1435,6 +1446,19 @@ template {
   .map-wrappep {
     max-width: 700px;
   }
+  .packages-wrappep {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .packages-title {
+    margin-top: 0;
+  }
+  __main {
+    width: 500px;
+    height: 340px;
+  }
   .reviews-slider__item {
     max-width: 580px;
   }
@@ -1526,6 +1550,19 @@ template {
   }
   .map {
     width: 340px;
+  }
+  .packages-wrappep {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 15px;
+  }
+  .packages__main {
+    width: 90%;
+    height: 500px;
+  }
+  .packages__mash {
+    max-width: 300px;
+    height: 500px;
   }
   .newsletter-wrappep {
     max-width: 576px;
@@ -1622,6 +1659,12 @@ template {
   .map {
     width: 100%;
     min-height: 172px;
+  }
+  .packages__main {
+    display: none;
+  }
+  .packages__mash {
+    width: 99%;
   }
   .newsletter {
     padding: 76px 0 83px;
