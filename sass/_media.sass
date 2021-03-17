@@ -9,6 +9,11 @@
     width: 230px
     height: 230px
 
+  .footer
+
+    &__input
+      flex-basis: 100%
+
 @media ( max-width: 992px )
   .container,
   .newsletter-wrappep
@@ -89,6 +94,35 @@
     width: 340px
     height: 250px
 
+  .footer
+
+    &__logo
+      grid-row: 1 / 2
+
+    &__categories
+      grid-row: 2 /3
+      grid-column: 1 /2
+
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+
+    &__list
+
+      &--additional
+        grid-column: span 2
+
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 4
+
+      &-form
+        grid-row: 4
+        grid-column: span 3
+
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -159,6 +193,10 @@
     width: 340px
 
   .packages
+
+    &-title
+      font-size: 18px
+      line-height: 23px
 
     &-wrappep
       display: grid
