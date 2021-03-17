@@ -39,6 +39,7 @@
 
     &-form
       grid-column: span 2
+      align-items: center
 
   &__form
     display: flex
@@ -54,6 +55,9 @@
     margin: 0 0 16px 0
     text-transform: uppercase
 
+    &--mess
+      margin-bottom: 30px
+
     &--inline
       display: flex
       align-items: center
@@ -64,6 +68,10 @@
     padding: 0
     margin: 0
     list-style: none
+
+  &-list
+    &__legal
+      margin-left: 73px
 
   &__item
     display: flex
@@ -96,6 +104,10 @@
     padding: 0 23px
     margin-bottom: 15px
     flex-basis: 48%
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
 
   &__message
     background-color: #fff
@@ -104,9 +116,24 @@
     padding: 18px 23px
     border: none
     flex-basis: 100%
+    resize: none
 
   &__button
     grid-column: 3
-    min-width: 160px
-    min-height: 50px
+    width: 160px
+    height: 50px
     padding: 18px
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    margin-top: -25px
+
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
+    margin-top: -10px
+    margin-left: 166px
