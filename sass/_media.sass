@@ -95,33 +95,63 @@
     height: 250px
 
   .footer
+    padding-top: 73px
+
+    &-wrappep
+      grid-template-columns: repeat(5, 1fr)
 
     &__logo
       grid-row: 1 / 2
-
-    &__categories
-      grid-row: 2 /3
-      grid-column: 1 /2
+      grid-column: span 2
+      width: 104px
+      height: 120px
+      margin-bottom: 18px
 
     &__social
       &-network
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
+        margin-left: -82px
+
+    &__categories
+      grid-row: 2
+      grid-column: span 2
 
     &__list
-
       &--additional
         grid-column: span 2
+        margin-left: -70px
+
+    &-list
+
+      &__legal
+        grid-column: span 2
+        margin-left: -60px
 
     &__contact
       &-details
         grid-row: 3
         grid-column: span 4
+        margin-top: 41px
 
       &-form
         grid-row: 4
-        grid-column: span 3
+        grid-column: span 4
+        margin-top: 40px
+        width: 539px
+
+    &__input
+      max-width: 255px
+
+    &__button
+      grid-column: span 3
+      margin: 0
+
+    &__info
+      margin: 0
+      align-self: center
+      padding-left: 20px
 
 @media ( max-width: 768px )
   .container
@@ -260,6 +290,14 @@
     width: 49%
     height: 255px
 
+  .footer
+
+    &__title
+      font-size: 14px
+
+    &__info
+      grid-column: span 2
+
 @media ( max-width: 576px )
   .hotel
     padding: 23px 0 40px
@@ -351,3 +389,75 @@
 
   .card
     width: 100%
+
+  .footer
+    padding-top: 69px
+
+    &-wrappep
+      grid-template-columns: minmax(95%, 1fr)
+
+    &__title
+      font-size: 18px
+      &--mess
+        margin-bottom: 15px
+
+    &__logo
+      grid-row: 1
+      grid-column: 1
+      width: 104px
+      margin-bottom: 0
+
+    &__social
+      &-network
+        display: flex
+        flex-direction: column
+        grid-row: 2
+        grid-column: 1
+        margin: 0
+        margin-top: 10px
+
+      &-link
+        width: 83px
+        margin-top: 22px
+
+    &-list
+      &__legal
+        grid-row: 3
+        grid-column: 1
+        margin: 0
+        margin-top: 11px
+
+    &__list
+      &--additional
+        grid-row: 4
+        grid-column: 1
+        margin: 0
+        margin-top: 10px
+
+    &__categories
+      grid-row: 5
+      grid-column: 1
+      margin-top: 10px
+
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+        margin-top: 20px
+
+      &-form
+        width: 100%
+        grid-row: 7
+        grid-column: 1
+        margin-top: 20px
+
+    &__info
+      grid-row: 8
+      grid-column: 1
+      align-self: start
+      padding: 0
+
+    &__button
+      grid-row: 9
+      grid-column: 1
+      margin-top: -30px
