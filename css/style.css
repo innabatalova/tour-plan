@@ -1412,7 +1412,7 @@ template {
   list-style: none;
 }
 
-.footer-list__legal {
+.footer__legal {
   margin-left: 73px;
 }
 
@@ -1716,7 +1716,7 @@ template {
     grid-column: span 2;
     margin-left: -70px;
   }
-  .footer-list__legal {
+  .footer__legal {
     grid-column: span 2;
     margin-left: -60px;
   }
@@ -2032,7 +2032,7 @@ template {
     width: 83px;
     margin-top: 22px;
   }
-  .footer-list__legal {
+  .footer__legal {
     -ms-grid-row: 3;
     grid-row: 3;
     -ms-grid-column: 1;
@@ -2040,7 +2040,7 @@ template {
     margin: 0;
     margin-top: 11px;
   }
-  .footer__list--additional {
+  .footer__additional {
     -ms-grid-row: 4;
     grid-row: 4;
     -ms-grid-column: 1;
