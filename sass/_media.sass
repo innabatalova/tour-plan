@@ -14,6 +14,10 @@
     &__input
       flex-basis: 100%
 
+  .disclaimer
+    &-wrappep
+      justify-content: space-between
+
 @media ( max-width: 992px )
   .container,
   .newsletter-wrappep
@@ -152,6 +156,9 @@
       margin: 0
       align-self: center
       padding-left: 20px
+
+    &__disclaimer
+      margin-top: 56px
 
 @media ( max-width: 768px )
   .container
@@ -297,6 +304,10 @@
 
     &__info
       grid-column: span 2
+
+  .disclaimer
+    &-wrappep
+      margin-top: 56px
 
 @media ( max-width: 576px )
   .hotel
@@ -459,3 +470,17 @@
       grid-row: 9
       grid-column: 1
       margin-top: -30px
+
+    &__string
+      &-icons
+        margin: 0
+        margin-top: 10px
+
+    &__disclaimer
+      margin-top: 0
+
+  .disclaimer
+    &-wrappep
+      flex-direction: column
+      align-items: start
+      margin-top: 10px
