@@ -1434,6 +1434,10 @@ template {
   margin-bottom: 20px;
 }
 
+.footer__item--end {
+  margin-bottom: 0;
+}
+
 .footer__icon-wrappep {
   min-width: 40px;
 }
@@ -1475,6 +1479,8 @@ template {
 }
 
 .footer__button {
+  -ms-grid-row: 5;
+  grid-row: 5;
   -ms-grid-column: 3;
   grid-column: 3;
   width: 160px;
@@ -1484,17 +1490,22 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  margin-top: -25px;
 }
 
 .footer__info {
+  -ms-grid-row: 5;
+  grid-row: 5;
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 165px;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
-  margin-top: -7px;
-  margin-left: 166px;
 }
 
 .activities {
