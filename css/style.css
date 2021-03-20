@@ -427,6 +427,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu__item_mobile_visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
@@ -1816,11 +1820,64 @@ template {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 78px;
+  }
   .container {
     max-width: 576px;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  .navbar-mobile-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__user_mobile_hidden, .navbar__search_mobile_hidden {
     display: none;
+  }
+  .navbar__user_mobile_visible, .navbar__search_mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    padding-top: 30px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 72px;
+  }
+  .navbar-bottom_visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item_mobile_visible {
+    display: block;
+  }
+  .navbar__search {
+    max-width: 70%;
+    margin: 0 auto 20px;
   }
   .navbar-top {
     padding: 28px 0;
@@ -1845,6 +1902,11 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name_light {
+    color: #ffffff;
+    margin-left: 0;
+    margin-top: 10px;
   }
   .breadcrumb-list {
     padding-bottom: 0;
@@ -1880,6 +1942,9 @@ template {
         -ms-flex-order: -1;
             order: -1;
     margin-left: 0;
+  }
+  .hotel-slider__button {
+    display: none;
   }
   .slider {
     height: 350px;

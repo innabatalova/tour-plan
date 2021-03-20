@@ -164,12 +164,60 @@
       margin-top: 56px
 
 @media ( max-width: 768px )
+
+  body
+    padding-top: 78px
+
   .container
     max-width: 576px
 
   .navbar
-    &__search, &-menu, &__user
+
+    &-mobile
+      &-fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
+
+    &__user, &__search
+      &_mobile
+        &_hidden
+          display: none
+
+        &_visible
+          display: flex
+
+    &__user
+      flex-direction: column
+      justify-content: center
+
+    &-bottom
       display: none
+      position: fixed
+      padding-top: 30px
+      right: 0
+      left: 0
+      bottom: 0
+      top: 72px
+
+      &_visible
+        display: block
+
+    &-menu
+      flex-direction: column
+      padding-top: 0
+
+      &__item
+        margin-bottom: 20px
+        &_mobile
+          &_visible
+            display: block
+
+    &__search
+      max-width: 70%
+      margin: 0 auto 20px
 
     &-top
       padding: 28px 0
@@ -189,6 +237,13 @@
         width: 16px
         height: 1px
         background-color: $text-color
+
+  .user
+    &__name
+      &_light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
 
   .breadcrumb
 
@@ -221,6 +276,10 @@
       &__offer
         order: -1
         margin-left: 0
+
+    &-slider
+      &__button
+        display: none
 
   .slider
     height: 350px
