@@ -1434,8 +1434,17 @@ template {
   margin-bottom: 20px;
 }
 
+.footer__item--middle {
+  margin-bottom: 20px;
+}
+
 .footer__item--end {
   margin-bottom: 0;
+}
+
+.footer__nestedlink {
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer__icon-wrappep {
@@ -1500,7 +1509,8 @@ template {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-left: 165px;
+  -ms-grid-column-align: end;
+      justify-self: end;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -1632,6 +1642,26 @@ template {
     width: 230px;
     height: 230px;
   }
+  .packages-wrappep {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .packages-title {
+    margin-top: 0;
+  }
+  .packages__main {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    grid-column: span 2;
+    max-width: 730px;
+    margin: auto;
+  }
+  .packages__mash {
+    max-width: 450px;
+    margin: auto;
+  }
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1649,7 +1679,7 @@ template {
     max-width: 700px;
   }
   .logo {
-    width: 132px;
+    max-width: 132px;
   }
   .logo__search {
     margin-left: auto;
@@ -1694,19 +1724,6 @@ template {
   }
   .map-wrappep {
     max-width: 700px;
-  }
-  .packages-wrappep {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .packages-title {
-    margin-top: 0;
-  }
-  __main {
-    width: 500px;
-    height: 340px;
   }
   .reviews-slider__item {
     max-width: 580px;
@@ -1773,7 +1790,7 @@ template {
   .footer__contact-details {
     -ms-grid-row: 3;
     grid-row: 3;
-    grid-column: span 4;
+    grid-column: span 6;
     margin-top: 41px;
   }
   .footer__contact-form {
@@ -1788,14 +1805,10 @@ template {
   }
   .footer__button {
     grid-column: span 3;
-    margin: 0;
   }
   .footer__info {
-    margin: 0;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    padding-left: 20px;
+    -ms-grid-column: 5;
+    grid-column: 5;
   }
   .footer__disclaimer {
     margin-top: 56px;
@@ -1805,7 +1818,6 @@ template {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    max-width: 90%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
@@ -1878,22 +1890,20 @@ template {
   .map {
     width: 340px;
   }
+  .packages-wrappep {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
   .packages-title {
     font-size: 18px;
     line-height: 23px;
   }
-  .packages-wrappep {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 15px;
-  }
   .packages__main {
-    width: 90%;
-    height: 500px;
+    display: none;
   }
   .packages__mash {
-    max-width: 300px;
-    height: 500px;
+    margin: auto;
+    width: 99%;
   }
   .newsletter-wrappep {
     max-width: 576px;
@@ -1954,7 +1964,16 @@ template {
     font-size: 14px;
   }
   .footer__info {
-    grid-column: span 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-column: 5 / 7;
+    margin-right: 25px;
+  }
+  .footer__contact-form {
+    grid-column: span 7;
+  }
+  .footer__string-icons {
+    margin: 0;
   }
   .disclaimer-wrappep {
     margin-top: 56px;
@@ -1962,6 +1981,9 @@ template {
 }
 
 @media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
   .hotel {
     padding: 23px 0 40px;
   }
@@ -1999,16 +2021,6 @@ template {
   .map {
     width: 100%;
     min-height: 172px;
-  }
-  .packages-title {
-    font-size: 18px;
-    line-height: 23px;
-  }
-  .packages__main {
-    display: none;
-  }
-  .packages__mash {
-    width: 99%;
   }
   .newsletter {
     padding: 76px 0 83px;
@@ -2052,8 +2064,9 @@ template {
     padding-top: 69px;
   }
   .footer-wrappep {
-    -ms-grid-columns: minmax(95%, 1fr);
-        grid-template-columns: minmax(95%, 1fr);
+    -ms-grid-columns: minmax(90%, 1fr);
+        grid-template-columns: minmax(90%, 1fr);
+    grid-row-gap: 15px;
   }
   .footer__title {
     font-size: 18px;
@@ -2126,6 +2139,9 @@ template {
     grid-column: 1;
     margin-top: 20px;
   }
+  .footer__input {
+    max-width: 100%;
+  }
   .footer__info {
     -ms-grid-row: 8;
     grid-row: 8;
@@ -2134,7 +2150,10 @@ template {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
-    padding: 0;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin: 0;
+    margin-bottom: 15px;
   }
   .footer__button {
     -ms-grid-row: 9;

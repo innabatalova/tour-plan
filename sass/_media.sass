@@ -9,6 +9,25 @@
     width: 230px
     height: 230px
 
+  .packages
+
+    &-wrappep
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+
+    &-title
+      margin-top: 0
+
+    &__main
+      grid-row: 1
+      grid-column: span 2
+      max-width: 730px
+      margin: auto
+
+    &__mash
+      max-width: 450px
+      margin: auto
+
   .footer
 
     &__input
@@ -24,7 +43,7 @@
     max-width: 700px
 
   .logo
-    width: 132px
+    max-width: 132px
 
     &__search
       margin-left: auto
@@ -68,19 +87,6 @@
 
     &-wrappep
       max-width: 700px
-
-  .packages
-
-    &-wrappep
-      display: grid
-      grid-template-columns: 1fr
-
-    &-title
-      margin-top: 0
-
-  &__main
-    width: 500px
-    height: 340px
 
   .reviews
     &-slider
@@ -136,7 +142,7 @@
     &__contact
       &-details
         grid-row: 3
-        grid-column: span 4
+        grid-column: span 6
         margin-top: 41px
 
       &-form
@@ -150,12 +156,9 @@
 
     &__button
       grid-column: span 3
-      margin: 0
 
     &__info
-      margin: 0
-      align-self: center
-      padding-left: 20px
+      grid-column: 5
 
     &__disclaimer
       margin-top: 56px
@@ -163,7 +166,6 @@
 @media ( max-width: 768px )
   .container
     max-width: 576px
-    max-width: 90%
 
   .navbar
     &__search, &-menu, &__user
@@ -231,21 +233,19 @@
 
   .packages
 
+    &-wrappep
+      grid-template-columns: 1fr
+
     &-title
       font-size: 18px
       line-height: 23px
 
-    &-wrappep
-      display: grid
-      grid-gap: 15px
-
     &__main
-      width: 90%
-      height: 500px
+      display: none
 
     &__mash
-      max-width: 300px
-      height: 500px
+      margin: auto
+      width: 99%
 
   .newsletter
 
@@ -303,13 +303,27 @@
       font-size: 14px
 
     &__info
-      grid-column: span 2
+      grid-column: 5 / 7
+      margin-right: 25px
+
+    &__contact
+      &-form
+        grid-column: span 7
+
+    &__string
+
+      &-icons
+        margin: 0
 
   .disclaimer
     &-wrappep
       margin-top: 56px
 
 @media ( max-width: 576px )
+
+  .container
+    max-width: 90%
+
   .hotel
     padding: 23px 0 40px
 
@@ -344,18 +358,6 @@
   .map
     width: 100%
     min-height: 172px
-
-  .packages
-
-    &-title
-      font-size: 18px
-      line-height: 23px
-
-    &__main
-      display: none
-
-    &__mash
-      width: 99%
 
   .newsletter
     padding: 76px 0 83px
@@ -405,7 +407,8 @@
     padding-top: 69px
 
     &-wrappep
-      grid-template-columns: minmax(95%, 1fr)
+      grid-template-columns: minmax(90%, 1fr)
+      grid-row-gap: 15px
 
     &__title
       font-size: 18px
@@ -460,11 +463,16 @@
         grid-column: 1
         margin-top: 20px
 
+    &__input
+      max-width: 100%
+
     &__info
       grid-row: 8
       grid-column: 1
       align-self: start
-      padding: 0
+      justify-self: start
+      margin: 0
+      margin-bottom: 15px
 
     &__button
       grid-row: 9
