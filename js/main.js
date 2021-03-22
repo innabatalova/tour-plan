@@ -55,6 +55,9 @@ modalButtton.on ('click', openModal);
 let closeModalButton = $(".modal__close");
 closeModalButton.on ('click', closeModal);
 
+let closeEscModalButton= $("body");
+closeEscModalButton.on ('keydown', closeModal);
+
 function openModal() {
 
   let modalOverlay = $ (".modal__overlay");
@@ -74,6 +77,7 @@ function closeModal(event) {
   modalOverlay.removeClass("modal__overlay--visible");
   modalDialog.removeClass("modal__dialog--visible");
 };
+
 
 
 });
