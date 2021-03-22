@@ -163,6 +163,15 @@
     &__disclaimer
       margin-top: 56px
 
+  .modal
+
+    &__dialog
+      padding: 30px 50px
+
+    &__close
+      width: 16px
+      height: 16px
+
 @media ( max-width: 768px )
 
   body
@@ -378,6 +387,43 @@
     &-wrappep
       margin-top: 56px
 
+  .modal
+
+    &__dialog
+      width: 320px
+      max-height: 550px
+
+    &__wrappep
+      flex-direction: column
+
+    &__button
+      padding: 12px
+      width: 120px
+      height: 40px
+      margin-bottom: 15px
+
+@media ( max-height: 576px )
+
+  .modal
+    &__wrappep
+      flex-direction: row
+    &__dialog
+      width: 478px
+      max-height: 90%
+      padding: 20px 40px
+      overflow: hidden
+
+    &__title
+      margin-top: 0
+      margin-bottom: 10px
+
+    &__input
+      height: 25px
+      width: 47%
+
+    &__message
+      min-height: 30px
+
 @media ( max-width: 576px )
 
   .container
@@ -551,3 +597,12 @@
       flex-direction: column
       align-items: start
       margin-top: 10px
+
+// @media ( max-height: 576px )
+
+//   .modal
+
+//     &__dialog
+//       width: 478px
+//       max-height: 15px
+//       border: 1px solid red

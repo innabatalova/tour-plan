@@ -1921,6 +1921,13 @@ template {
   .footer__disclaimer {
     margin-top: 56px;
   }
+  .modal__dialog {
+    padding: 30px 50px;
+  }
+  .modal__close {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2146,6 +2153,48 @@ template {
   }
   .disclaimer-wrappep {
     margin-top: 56px;
+  }
+  .modal__dialog {
+    width: 320px;
+    max-height: 550px;
+  }
+  .modal__wrappep {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal__button {
+    padding: 12px;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-height: 576px) {
+  .modal__wrappep {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .modal__dialog {
+    width: 478px;
+    max-height: 90%;
+    padding: 20px 40px;
+    overflow: hidden;
+  }
+  .modal__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .modal__input {
+    height: 25px;
+    width: 47%;
+  }
+  .modal__message {
+    min-height: 30px;
   }
 }
 
