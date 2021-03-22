@@ -2173,12 +2173,6 @@ template {
 }
 
 @media (max-height: 576px) {
-  .modal__wrappep {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
   .modal__dialog {
     width: 478px;
     max-height: 90%;

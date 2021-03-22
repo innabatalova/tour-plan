@@ -55,8 +55,13 @@ modalButtton.on ('click', openModal);
 let closeModalButton = $(".modal__close");
 closeModalButton.on ('click', closeModal);
 
-let closeEscModalButton= $("body");
-closeEscModalButton.on ('keydown', closeModal);
+$('body').on('keydown', function(e){
+  if(e.which === 27){
+    closeModal(e);
+  }
+});
+
+
 
 function openModal() {
 
