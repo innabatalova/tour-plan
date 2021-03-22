@@ -16,13 +16,8 @@ $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
-
-$title = "Новый email Best Tour Plan";
-$body = "
-<h2>Новый email</h2>
-<b>Адрес почты:</b> $email<br>
+<b>Сообщение:</b><br>$message<br>
+<b>Адрес почты:</b> $email
 ";
 
 // Настройки PHPMailer
@@ -60,4 +55,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+header('Location: thankyou.html');  
