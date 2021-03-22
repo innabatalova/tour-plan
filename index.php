@@ -1002,28 +1002,30 @@
             <h3 class="footer__title footer__title--mess">Send us a message</h3>
 
             <!-- /.footer__contact-form -->
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form">
               <input
                 type="text"
                 class="footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 class="footer__message"
-                cols="30"
-                rows="10"
                 placeholder="Message"
+                name="message"
               ></textarea>
-            </form>
+            
           </div>
           <button class="button footer__button" type="submit">Send</button>
           <span class="footer__info">* Required Fields</span>
         </div>
+        </form>
         <!-- /.footer-wrappep -->
         <div class="footer__disclaimer">
           <div class="disclaimer-wrappep">
