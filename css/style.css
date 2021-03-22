@@ -402,6 +402,7 @@ template {
 
 .navbar-bottom {
   background-color: #0A223D;
+  overflow-y: auto;
 }
 
 .navbar-menu {
@@ -1447,6 +1448,7 @@ template {
 }
 
 .footer__nestedlink {
+  white-space: nowrap;
   text-decoration: none;
   color: inherit;
 }
