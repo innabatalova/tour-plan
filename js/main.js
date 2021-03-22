@@ -1,4 +1,6 @@
-const hotelSlider = new Swiper('.hotel-slider', {
+$(document).ready(function(){
+  //слайдер 1
+  const hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
 
   loop: true,
@@ -17,7 +19,8 @@ const hotelSlider = new Swiper('.hotel-slider', {
 
  
 });
- 
+
+ //слайдер 2
 const reviewsSlider = new Swiper('.reviews-slider', {
   // Optional parameters
 
@@ -38,9 +41,39 @@ const reviewsSlider = new Swiper('.reviews-slider', {
  
 });
 
-let menuButton = document.querySelector(".menu-button")
-menuButton.addEventListener("click", function(){
+//переключатель для меню
+let menuButton = $(".menu-button")
+menuButton.on("click", function(){
   //  console.log ("Клик по кнопке меню")
-   document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom_visible")
+   $(".navbar-bottom").toggleClass("navbar-bottom_visible")
+
+});
+
+let modalButtton = $('[data-toggle="modal"]');
+modalButtton.on ('click', openModal);
+
+let closeModalButton = $(".modal__close");
+closeModalButton.on ('click', closeModal);
+
+function openModal() {
+
+  let modalOverlay = $ (".modal__overlay");
+  let modalDialog = $ (".modal__dialog");
+
+  modalOverlay.addClass("modal__overlay--visible");
+  modalDialog.addClass("modal__dialog--visible");
+};
+
+function closeModal(event) {
+
+  event.preventDefault();
+
+  let modalOverlay = $ (".modal__overlay");
+  let modalDialog = $ (".modal__dialog");
+
+  modalOverlay.removeClass("modal__overlay--visible");
+  modalDialog.removeClass("modal__dialog--visible");
+};
+
 
 });
