@@ -579,11 +579,12 @@
           <!-- /.newsletter-title__strong -->
         </h2>
         <!-- /.newsletter-title -->
-        <form action="#" class="subscribe subscribe-title">
+        <form action="send.php" method="POST" class="subscribe subscribe-title">
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
           <button class="subscribe__button">Send</button>
           <!-- /.search__button -->
