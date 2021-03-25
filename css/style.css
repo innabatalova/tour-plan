@@ -57,6 +57,11 @@ input {
   line-height: 15px;
 }
 
+.invalid {
+  color: red;
+  caret-color: black;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1495,6 +1500,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1507,13 +1516,15 @@ template {
 .footer__message {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__button {
-  -ms-grid-row: 5;
-  grid-row: 5;
-  -ms-grid-column: 3;
-  grid-column: 3;
+  width: 160px;
+  margin-top: 22px;
 }
 
 .footer__info {
@@ -1531,6 +1542,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+  margin-top: 18px;
 }
 
 .footer__disclaimer {
@@ -1542,7 +1554,7 @@ template {
 }
 
 .footer__string-icons {
-  margin-left: 267px;
+  margin-left: 280px;
 }
 
 .disclaimer-wrappep {
@@ -1555,7 +1567,7 @@ template {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: 95px;
+  margin-top: 102px;
 }
 
 .activities {
@@ -1706,12 +1718,17 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__input-mail {
+  width: 100%;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__wrappep {
@@ -1729,6 +1746,7 @@ template {
 .modal__button {
   width: 160px;
   height: 50px;
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1933,7 +1951,7 @@ template {
     margin-top: 40px;
     width: 529px;
   }
-  .footer__input {
+  .footer__input-group {
     max-width: 255px;
   }
   .footer__button {
@@ -2206,11 +2224,16 @@ template {
   }
   .modal__title {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
   .modal__input {
-    height: 25px;
-    width: 47%;
+    width: 49%;
+    height: 30px;
+  }
+  .modal__input-mail {
+    width: 100%;
+    margin-top: 15px;
+    height: 30px;
   }
   .modal__message {
     min-height: 30px;
@@ -2369,6 +2392,13 @@ template {
     margin-top: 20px;
   }
   .footer__contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     -ms-grid-row: 7;
     grid-row: 7;
@@ -2377,27 +2407,42 @@ template {
     margin-top: 20px;
   }
   .footer__input {
-    max-width: 100%;
+    min-width: 281px;
+  }
+  .footer__input-group {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer__message {
+    min-width: 281px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .footer__info {
     -ms-grid-row: 8;
     grid-row: 8;
     -ms-grid-column: 1;
     grid-column: 1;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
     -ms-grid-column-align: start;
         justify-self: start;
-    margin: 0;
+    margin-top: 15px;
     margin-bottom: 15px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   .footer__button {
-    -ms-grid-row: 9;
-    grid-row: 9;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    margin-top: -30px;
+    margin-top: 0;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
   .footer__string-icons {
     margin: 0;
@@ -2414,7 +2459,7 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    margin-top: 10px;
+    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

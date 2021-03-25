@@ -105,19 +105,26 @@
     color: inherit
 
   &__input
-    margin-bottom: 15px
-    flex-basis: 48%
+    width: 100%
+
+    &-group
+      margin-bottom: 15px
+      flex-basis: 48%
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+
+  &__message
+    flex-basis: 100%
     font-style: normal
     font-weight: normal
     font-size: 12px
     line-height: 15px
 
-  &__message
-    flex-basis: 100%
-
   &__button
-    grid-row: 5
-    grid-column: 3
+    width: 160px
+    margin-top: 22px
 
   &__info
     grid-row: 5
@@ -129,6 +136,7 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+    margin-top: 18px
 
   &__disclaimer
     color: $light
@@ -139,7 +147,7 @@
 
   &__string
     &-icons
-      margin-left: 267px
+      margin-left: 280px
 
 .disclaimer
 
@@ -147,4 +155,6 @@
     display: flex
     align-items: center
     justify-content: flex-end
-    margin-top: 95px
+    margin-top: 102px
+
+  //проверка репозитория

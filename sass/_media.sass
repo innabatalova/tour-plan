@@ -152,7 +152,8 @@
         width: 529px
 
     &__input
-      max-width: 255px
+      &-group
+        max-width: 255px
 
     &__button
       grid-column: span 3
@@ -414,11 +415,15 @@
 
     &__title
       margin-top: 0
-      margin-bottom: 10px
+      margin-bottom: 0
 
     &__input
-      height: 25px
-      width: 47%
+      width: 49%
+      height: 30px
+      &-mail
+        width: 100%
+        margin-top: 15px
+        height: 30px
 
     &__message
       min-height: 30px
@@ -562,26 +567,35 @@
         margin-top: 20px
 
       &-form
+        display: flex
+        flex-direction: column
         width: 100%
         grid-row: 7
         grid-column: 1
         margin-top: 20px
 
     &__input
-      max-width: 100%
+      min-width: 281px
+      &-group
+        order: 1
+
+    &__message
+      min-width: 281px
+      order: 2
 
     &__info
       grid-row: 8
       grid-column: 1
+      flex-basis: 100%
       align-self: start
       justify-self: start
-      margin: 0
+      margin-top: 15px
       margin-bottom: 15px
+      order: 3
 
     &__button
-      grid-row: 9
-      grid-column: 1
-      margin-top: -30px
+      margin-top: 0
+      order: 4
 
     &__string
       &-icons
@@ -595,13 +609,4 @@
     &-wrappep
       flex-direction: column
       align-items: start
-      margin-top: 10px
-
-// @media ( max-height: 576px )
-
-//   .modal
-
-//     &__dialog
-//       width: 478px
-//       max-height: 15px
-//       border: 1px solid red
+      margin-top: 30px
