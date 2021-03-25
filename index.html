@@ -273,7 +273,9 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button" data-toggle="modal">View Other Options</button>
+              <button class="button booking__button" data-toggle="modal">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -579,12 +581,18 @@
           <!-- /.newsletter-title__strong -->
         </h2>
         <!-- /.newsletter-title -->
-        <form action="send.php" method="POST" class="subscribe subscribe-title">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe subscribe-title form"
+        >
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
+            required
+            minlength="2"
           />
           <button class="subscribe__button">Send</button>
           <!-- /.search__button -->
@@ -1003,31 +1011,39 @@
             <h3 class="footer__title footer__title--mess">Send us a message</h3>
 
             <!-- /.footer__contact-form -->
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="form footer__form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="phone footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                  minlength="2"
+                />
+              </div>
               <textarea
                 class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
-            
+              <button class="button footer__button" type="submit">Send</button>
+              <span class="footer__info">* Required Fields</span>
+            </form>
           </div>
-          <button class="button footer__button" type="submit">Send</button>
-          <span class="footer__info">* Required Fields</span>
+
+          <!-- /.footer-wrappep -->
         </div>
-        </form>
-        <!-- /.footer-wrappep -->
         <div class="footer__disclaimer">
           <div class="disclaimer-wrappep">
             <div class="footer__string">
@@ -1052,20 +1068,42 @@
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
         <a href="#" class="modal__close">
-          <img src="image/close.svg" alt="icon: close">
+          <img src="image/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title">Booking</h3>
-        <form action="send.php" method="POST">
-          <input class ="modal__input" type="text" placeholder="Your Full Name*" name="name">
-          <input class ="modal__input" type="text" placeholder="Phone Number*" name="phone">
-          <input class ="modal__input" type="text" placeholder="Email*" name="email">
-          <textarea class ="message modal__message"
-                placeholder="Message"
-                name="message"
-              ></textarea>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            class="modal__input"
+            type="text"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            class="phone modal__input"
+            type="tel"
+            placeholder="Phone Number*"
+            name="phone"
+            required
+            minlength="2"
+          />
+          <input
+            class="modal__input-mail"
+            type="email"
+            placeholder="Email*"
+            name="email"
+            required
+            minlength="2"
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
           <div class="modal__wrappep">
             <button class="button modal__button" type="submit">Send</button>
-          <span class="modal__info">* Required Fields</span>
+            <span class="modal__info">* Required Fields</span>
           </div>
         </form>
       </div>
@@ -1074,6 +1112,8 @@
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
     <!-- скрипты для яндекс карт -->
     <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=b013a540-737d-452a-bd5a-59729d695c66&lang=ru_RU"></script>
