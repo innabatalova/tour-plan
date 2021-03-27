@@ -1,6 +1,6 @@
 .reviews
   position: relative
-  padding: 40px 0 70px
+  padding: 40px 0 40px
 
   &-container
     max-width: 1074px
@@ -10,7 +10,7 @@
   &__title
     font-style: normal
     font-weight: bold
-    font-size: 36px
+    font-size: 38px
     line-height: 45px
     text-align: center
     text-transform: uppercase
@@ -19,8 +19,6 @@
 
   &-slider
     position: relative
-
-    &__slide
 
     &__item
       position: relative
@@ -73,14 +71,17 @@
       font-size: 12px
       line-height: 15px
       color: $primary
-      margin-bottom: 10px
+      margin: 0
+      margin-bottom: 15px
 
     &__date
       font-style: normal
       font-weight: normal
       font-size: 10px
       line-height: 13px
-      margin-bottom: 4px
+
+    &__rating
+      margin-bottom: 15px
 
     &__text
       max-width: 537px
@@ -90,15 +91,16 @@
       line-height: 160%
       text-align: justify
       margin: auto
+      margin-top: 10px
 
     &__button
       position: absolute
-      top: 50%
+      top: 40%
       transform: translateY(-50%)
       width: 30px
       height: 30px
       background-repeat: no-repeat
-      background-size: 20px
+      background-size: 30px
       background-position: center
       border: none
       background-color: transparent

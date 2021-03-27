@@ -3,6 +3,7 @@
   color: $light
   padding-top: 108px
   padding-bottom: 46px
+  overflow: hidden
 
   &-wrappep
     display: grid
@@ -23,7 +24,7 @@
     &-link
       display: flex
       align-items: center
-      min-width: 83px
+      min-width: 90px
       justify-content: space-between
 
     &-network
@@ -56,7 +57,11 @@
     text-transform: uppercase
 
     &--mess
-      margin-bottom: 30px
+      margin-top: 10px
+      margin-bottom: 29px
+
+    &--messto
+      margin-bottom: 29px
 
     &--inline
       display: flex
@@ -99,6 +104,10 @@
   &__text
     color: $footer-text-color
     margin-bottom: 22px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
 
   &__link
     text-decoration: none
@@ -122,6 +131,7 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
+    overflow: hidden
 
   &__button
     width: 160px
@@ -147,6 +157,8 @@
     line-height: 15px
 
   &__string
+    &-bottom
+      margin-right: 5px
     &-icons
       margin-left: 280px
 

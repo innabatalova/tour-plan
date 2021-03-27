@@ -13,7 +13,8 @@ img {
   max-width: 100%; }
 
 button {
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
   button:hover {
     color: #D3D3D3; }
 
@@ -22,7 +23,15 @@ input {
   border-radius: 4px;
   border: none;
   height: 50px;
-  padding: 0 23px; }
+  padding: 0 23px;
+  outline: none; }
+
+textarea {
+  outline: none; }
+
+iframe {
+  width: 100%;
+  height: 100%; }
 
 .container {
   max-width: 1110px;
@@ -31,6 +40,7 @@ input {
 .message {
   background-color: #fff;
   border-radius: 4px;
+  width: 100%;
   min-height: 123px;
   padding: 18px 23px;
   border: none;
@@ -43,7 +53,8 @@ input {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px; }
+  line-height: 15px;
+  outline: none; }
 
 .invalid {
   position: relative;
@@ -450,7 +461,7 @@ template {
     color: inherit; }
 
 .hotel {
-  padding: 23px 0 70px; }
+  padding: 10px 0 70px; }
   .hotel-info {
     display: flex;
     align-items: center;
@@ -471,7 +482,8 @@ template {
       white-space: nowrap; }
     .hotel-info__rating {
       width: 65px;
-      height: 45px; }
+      height: 45px;
+      margin-top: 10px; }
   .hotel-name {
     font-size: 24px;
     line-height: 30px;
@@ -492,8 +504,6 @@ template {
     justify-content: space-between; }
   .hotel-slider {
     position: relative;
-    width: 100%;
-    height: 100%;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
@@ -679,7 +689,8 @@ template {
     font-size: 36px;
     line-height: 45px;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 65px; }
   .packages-item {
     position: relative;
     overflow: hidden;
@@ -714,10 +725,7 @@ template {
       font-weight: bold;
       font-size: 18px;
       line-height: 23px;
-      margin-top: 0;
-      margin-bottom: 20px; }
-      .packages-item__title--mash {
-        margin-bottom: 0; }
+      margin: 0; }
     .packages-item__mainmessage {
       position: relative;
       display: grid;
@@ -738,7 +746,7 @@ template {
       font-size: 14px;
       line-height: 160.6%;
       margin-top: 0;
-      margin-bottom: 17px; }
+      margin-bottom: 20px; }
     .packages-item__oldprice {
       display: grid;
       align-items: end;
@@ -746,8 +754,11 @@ template {
       font-weight: normal;
       font-size: 14px;
       line-height: 18px;
-      text-decoration-line: line-through; }
+      text-decoration-line: line-through;
+      margin-bottom: -5px; }
     .packages-item__price {
+      display: grid;
+      align-items: end;
       font-style: normal;
       font-weight: bold;
       font-size: 24px;
@@ -758,7 +769,8 @@ template {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 15px; }
+    line-height: 15px;
+    margin-top: 5px; }
   .packages__icon {
     margin-right: 16px; }
   .packages__main {
@@ -774,7 +786,7 @@ template {
     object-fit: cover; }
   .packages-button {
     position: absolute;
-    bottom: 30px;
+    bottom: 25px;
     right: 21px;
     width: 120px;
     height: 40px;
@@ -789,7 +801,7 @@ template {
     border: none; }
   .packages__mashbutton {
     position: absolute;
-    bottom: 30px;
+    bottom: 25px;
     right: 21px; }
   .packages__mash {
     display: grid;
@@ -873,7 +885,7 @@ template {
 
 .reviews {
   position: relative;
-  padding: 40px 0 70px; }
+  padding: 40px 0 40px; }
   .reviews-container {
     max-width: 1074px;
     margin: 0 auto;
@@ -881,7 +893,7 @@ template {
   .reviews__title {
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 38px;
     line-height: 45px;
     text-align: center;
     text-transform: uppercase;
@@ -935,13 +947,15 @@ template {
       font-size: 12px;
       line-height: 15px;
       color: #EC1F46;
-      margin-bottom: 10px; }
+      margin: 0;
+      margin-bottom: 15px; }
     .reviews-slider__date {
       font-style: normal;
       font-weight: normal;
       font-size: 10px;
-      line-height: 13px;
-      margin-bottom: 4px; }
+      line-height: 13px; }
+    .reviews-slider__rating {
+      margin-bottom: 15px; }
     .reviews-slider__text {
       max-width: 537px;
       font-style: normal;
@@ -949,15 +963,16 @@ template {
       font-size: 12px;
       line-height: 160%;
       text-align: justify;
-      margin: auto; }
+      margin: auto;
+      margin-top: 10px; }
     .reviews-slider__button {
       position: absolute;
-      top: 50%;
+      top: 40%;
       transform: translateY(-50%);
       width: 30px;
       height: 30px;
       background-repeat: no-repeat;
-      background-size: 20px;
+      background-size: 30px;
       background-position: center;
       border: none;
       background-color: transparent;
@@ -976,7 +991,8 @@ template {
   background-color: #0A223D;
   color: #ffffff;
   padding-top: 108px;
-  padding-bottom: 46px; }
+  padding-bottom: 46px;
+  overflow: hidden; }
   .footer-wrappep {
     display: grid;
     grid-template-columns: repeat(4, minmax(min-content, 1fr));
@@ -992,7 +1008,7 @@ template {
   .footer__social-link {
     display: flex;
     align-items: center;
-    min-width: 83px;
+    min-width: 90px;
     justify-content: space-between; }
   .footer__social-network {
     display: flex;
@@ -1017,7 +1033,10 @@ template {
     margin: 0 0 16px 0;
     text-transform: uppercase; }
     .footer__title--mess {
-      margin-bottom: 30px; }
+      margin-top: 10px;
+      margin-bottom: 29px; }
+    .footer__title--messto {
+      margin-bottom: 29px; }
     .footer__title--inline {
       display: flex;
       align-items: center;
@@ -1051,7 +1070,11 @@ template {
     min-width: 40px; }
   .footer__text {
     color: #BDBDBD;
-    margin-bottom: 22px; }
+    margin-bottom: 22px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160%; }
   .footer__link {
     text-decoration: none;
     color: inherit; }
@@ -1070,7 +1093,8 @@ template {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 15px; }
+    line-height: 15px;
+    overflow: hidden; }
   .footer__button {
     width: 160px;
     margin-top: 22px; }
@@ -1091,6 +1115,8 @@ template {
     font-weight: normal;
     font-size: 12px;
     line-height: 15px; }
+  .footer__string-bottom {
+    margin-right: 5px; }
   .footer__string-icons {
     margin-left: 280px; }
 
@@ -1109,10 +1135,13 @@ template {
     font-size: 24px;
     line-height: 30px;
     text-transform: uppercase;
-    margin-bottom: 57px; }
+    margin-bottom: 57px;
+    margin-top: 0; }
   .activities-wrappep {
     display: flex;
     justify-content: space-between; }
+  .activities__card {
+    overflow: hidden; }
 
 .card {
   position: relative;
@@ -1370,7 +1399,7 @@ template {
       margin-top: 40px;
       width: 529px; }
     .footer__input-group {
-      min-width: 255px; }
+      width: 100%; }
     .footer__button {
       grid-column: span 3; }
     .footer__info {
@@ -1465,10 +1494,8 @@ template {
   .slider {
     height: 350px; }
   .booking {
-    max-width: 340px;
     margin-right: 5px; }
   .map {
-    max-width: 340px;
     margin-left: 5px; }
   .packages-wrappep {
     grid-template-columns: 1fr; }
@@ -1589,7 +1616,7 @@ template {
     min-height: 210px;
     margin-bottom: 20px; }
   .map {
-    width: 100%;
+    min-width: 100%;
     min-height: 172px; }
   .newsletter {
     height: 320px;
@@ -1669,16 +1696,15 @@ template {
     .footer__contact-form {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      width: 90%;
       grid-row: 7;
       grid-column: 1;
       margin-top: 20px; }
     .footer__input {
-      min-width: 281px; }
+      width: 100%; }
       .footer__input-group {
         order: 1; }
     .footer__message {
-      width: 100%;
       order: 2; }
     .footer__info {
       grid-row: 8;
