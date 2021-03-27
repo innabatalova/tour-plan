@@ -31,7 +31,11 @@
   .footer
 
     &__input
-      flex-basis: 100%
+      width: 100%
+
+      &-group
+        display: flex
+        flex-basis: 100%
 
   .disclaimer
     &-wrappep
@@ -153,7 +157,7 @@
 
     &__input
       &-group
-        max-width: 255px
+        min-width: 255px
 
     &__button
       grid-column: span 3
@@ -296,10 +300,12 @@
     height: 350px
 
   .booking
-    width: 340px
+    max-width: 340px
+    margin-right: 5px
 
   .map
-    width: 340px
+    max-width: 340px
+    margin-left: 5px
 
   .packages
 
@@ -429,6 +435,7 @@
         height: 30px
 
     &__message
+      width: 100%
       min-height: 30px
 
 @media ( max-width: 576px )
@@ -583,7 +590,7 @@
         order: 1
 
     &__message
-      min-width: 281px
+      width: 100%
       order: 2
 
     &__info
