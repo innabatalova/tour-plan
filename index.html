@@ -53,7 +53,7 @@
 
           <a href="#" class="user navbar__user navbar__user_mobile_hidden">
             <img
-              src="image/user-avatar.jfif"
+              src="image/user-avatar.jpg"
               alt="avatar: Nathan"
               class="user__avatar"
             />
@@ -76,7 +76,7 @@
             <li class="navbar-menu__item navbar-menu__item_mobile_visible">
               <a href="#" class="user navbar__user navbar__user_mobile_visible">
                 <img
-                  src="image/user-avatar.jfif"
+                  src="image/user-avatar.jpg"
                   alt="avatar: Nathan"
                   class="user__avatar"
                 />
@@ -412,7 +412,9 @@
               <!-- /.packages-item__oldprice -->
               <strong class="packages-item__price">$ 8,500</strong>
               <!-- /.packages-item__price -->
-              <button class="packages-button">Book Now</button>
+              <button class="packages-button" data-toggle="modal">
+                Book Now
+              </button>
             </div>
           </div>
           <div
@@ -469,7 +471,10 @@
               <!-- /.packages-item__oldprice -->
               <strong class="packages-item__price">$ 3,000</strong>
               <!-- /.packages-item__price -->
-              <button class="packages-button packages__mashbutton">
+              <button
+                class="packages-button packages__mashbutton"
+                data-toggle="modal"
+              >
                 Book Now
               </button>
             </div>
@@ -528,7 +533,10 @@
               <!-- /.packages-item__oldprice -->
               <strong class="packages-item__price">$ 9,500</strong>
               <!-- /.packages-item__price -->
-              <button class="packages-button packages__mashbutton">
+              <button
+                class="packages-button packages__mashbutton"
+                data-toggle="modal"
+              >
                 Book Now
               </button>
             </div>
@@ -587,7 +595,10 @@
               <!-- /.packages-item__oldprice -->
               <strong class="packages-item__price">$ 2,500</strong>
               <!-- /.packages-item__price -->
-              <button class="packages-button packages__mashbutton">
+              <button
+                class="packages-button packages__mashbutton"
+                data-toggle="modal"
+              >
                 Book Now
               </button>
             </div>
@@ -646,7 +657,10 @@
               <!-- /.packages-item__oldprice -->
               <strong class="packages-item__price">$ 3,500</strong>
               <!-- /.packages-item__price -->
-              <button class="packages-button packages__mashbutton">
+              <button
+                class="packages-button packages__mashbutton"
+                data-toggle="modal"
+              >
                 Book Now
               </button>
             </div>
@@ -659,7 +673,7 @@
     <section
       class="newsletter"
       data-parallax="scroll"
-      data-image-src="image\newsletter-bg.jfif"
+      data-image-src="image\newsletter-bg.jpg"
     >
       <div class="newsletter-wrappep">
         <h2 class="newsletter-title newsletter__title">
@@ -699,7 +713,7 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    src="image/reviews-avatar.jfif"
+                    src="image/reviews-avatar.jpg"
                     alt="Photo: Megan Fox"
                     class="reviews-slider__avatar"
                   />
@@ -735,7 +749,7 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    src="image/reviews-avatar-2.jfif"
+                    src="image/reviews-avatar-2.jpg"
                     alt="Photo: Megan Fox"
                     class="reviews-slider__avatar"
                   />
@@ -767,7 +781,7 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    src="image/reviews-avatar-3.jfif"
+                    src="image/reviews-avatar-3.jpg"
                     alt="Photo: Megan Fox"
                     class="reviews-slider__avatar"
                   />
@@ -798,7 +812,7 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    src="image/reviews-avatar-4.jfif"
+                    src="image/reviews-avatar-4.jpg"
                     alt="Photo: Megan Fox"
                     class="reviews-slider__avatar"
                   />
@@ -831,7 +845,7 @@
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
-                    src="image/reviews-avatar-5.jfif"
+                    src="image/reviews-avatar-5.jpg"
                     alt="Photo: Megan Fox"
                     class="reviews-slider__avatar"
                   />
@@ -898,7 +912,7 @@
             />
             <h3 class="card__title">The curious corner of chamarel</h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
@@ -914,7 +928,7 @@
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
@@ -930,7 +944,7 @@
             />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
@@ -946,7 +960,7 @@
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
@@ -959,11 +973,12 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrappep">
-          <img
-            src="image/vertical-logo.svg"
-            alt="Logo: Best Tour Plan"
+          <a
+            href="https://innabatalova.ru/tour-plan/"
             class="logo footer__logo"
-          />
+          >
+            <img src="image/vertical-logo.svg" alt="Logo: Best Tour Plan" />
+          </a>
           <div class="footer-list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -1109,12 +1124,16 @@
                 </div>
                 <span>
                   Tel (business hours) :
-                  <a href="#" class="footer__nestedlink">269 1500</a> <br />Tel
-                  (hotline) Monday - Saturday:
-                  <a href="#" class="footer__nestedlink">52-56-61-38</a> (08:00
-                  am – 20:00 pm) <br />Tel (hotline) Sunday:
-                  <a href="#" class="footer__nestedlink">52-56-61-38</a> (08:00
-                  am – 14:00 pm)
+                  <a href="269 1500" class="footer__nestedlink">269 1500</a>
+                  <br />Tel (hotline) Monday - Saturday:
+                  <a href="52-56-61-38" class="footer__nestedlink"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 20:00 pm) <br />Tel (hotline) Sunday:
+                  <a href="52-56-61-38" class="footer__nestedlink"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 14:00 pm)
                 </span>
               </li>
               <li
@@ -1130,7 +1149,7 @@
                     alt="icon: mail"
                   />
                 </div>
-                <a href="#" class="footer__nestedlink"
+                <a href="cherly.lawson@example.com" class="footer__nestedlink"
                   >cherly.lawson@example.com</a
                 >
               </li>
@@ -1159,7 +1178,7 @@
                   placeholder="Phone Number*"
                   name="phone"
                   required
-                  minlength="10"
+                  minlength="18"
                 />
               </div>
               <textarea
@@ -1223,7 +1242,7 @@
             placeholder="Phone Number*"
             name="phone"
             required
-            minlength="10"
+            minlength="18"
           />
           <input
             class="modal__input-mail"

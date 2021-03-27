@@ -218,6 +218,7 @@
     &-menu
       flex-direction: column
       padding-top: 0
+      z-index: 99
 
       &__item
         margin-bottom: 20px
@@ -289,7 +290,7 @@
 
     &-slider
       &__button
-        display: none
+        z-index: 97
 
   .slider
     height: 350px
@@ -346,11 +347,13 @@
           left: 50%
           transform: translate(-50%, 0)
           margin-left: -65px
+          z-index: 97
 
         &--next
           left: 50%
           transform: translate(-50%, 0)
           margin-left: 65px
+          z-index: 97
 
       &__rating
         padding-bottom: 33px
@@ -494,7 +497,7 @@
   .reviews
 
     &-container
-      width: 281px
+      max-width: 281px
 
     &-slider
       height: 100%
