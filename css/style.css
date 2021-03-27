@@ -1480,11 +1480,15 @@ template {
   .packages__mash {
     margin: auto;
     width: 99%; }
-  .newsletter-wrappep {
-    max-width: 576px;
-    max-width: 90%;
-    flex-direction: column;
-    align-items: flex-start; }
+  .newsletter {
+    padding-top: 90px; }
+    .newsletter-wrappep {
+      max-width: 576px;
+      max-width: 90%;
+      flex-direction: column;
+      align-items: flex-start; }
+    .newsletter-title {
+      margin-bottom: 0; }
   .reviews {
     padding-bottom: 0; }
     .reviews-slider__item {
@@ -1588,7 +1592,10 @@ template {
     width: 100%;
     min-height: 172px; }
   .newsletter {
+    height: 320px;
     padding: 76px 0 83px; }
+    .newsletter-wrappep {
+      flex-direction: column; }
     .newsletter__title {
       margin-bottom: 37px;
       font-style: normal;
