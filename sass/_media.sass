@@ -66,6 +66,7 @@
   .search
     &__input
       width: 340px
+      margin-left: -20px
 
   .hotel
     &-grid
@@ -93,11 +94,32 @@
       max-width: 700px
 
   .reviews
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+
     &-slider
       &__item
         max-width: 580px
 
+      &__button
+        top: 45%
+
+        &--prev
+          left: 83px
+        &--next
+          right: 83px
+
   .activities
+    padding-top: 40px
+    padding-bottom: 55px
+
+    &__title
+      margin-bottom: 65px
+
     &-wrappep
       flex-wrap: wrap
 
@@ -126,7 +148,8 @@
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
-        margin-left: -45px
+        margin-left: -55px
+        margin-bottom: 10px
 
     &__categories
       grid-row: 2
@@ -148,6 +171,13 @@
         grid-row: 3
         grid-column: span 6
         margin-top: 41px
+
+    &__title
+      &--mess
+        margin-top: 0
+      &--messto
+        margin-top: 40px
+        margin-bottom: 25px
 
       &-form
         grid-row: 4
@@ -450,7 +480,7 @@
     padding: 23px 0 40px
 
     &-info
-      padding-bottom: 18px
+      padding-bottom: 30px
 
     &-slider
       height: 179px
@@ -468,6 +498,9 @@
     &-coordinates
       width: 100%
       flex-direction: column
+
+  .stars
+    margin-right: 15px
 
   .logo
     width: 99px
@@ -516,6 +549,21 @@
     &-slider
       height: 100%
 
+      &__username
+        margin-bottom: 0
+
+      &__rating
+        margin-bottom: 0
+
+      &__text
+        margin-top: 0
+
+      &__button
+        &--next
+          margin-left: 90px
+        &--prev
+          margin-left: -90px
+
     &__title
       display: block
       width: 245px
@@ -529,6 +577,27 @@
   .card
     width: 100%
 
+  .activities
+    padding-bottom: 45px
+
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin-top: 20px
+      margin-bottom: 40px
+
+    &__card
+      &--one
+        order: 1
+      &--two
+        order: 3
+      &--three
+        order: 2
+      &--four
+        order: 4
+
   .footer
     padding-top: 69px
 
@@ -538,8 +607,12 @@
 
     &__title
       font-size: 18px
+
       &--mess
-        margin-bottom: 15px
+        margin-bottom: 25px
+        margin-top: 15px
+      &--messto
+        margin-top: 20px
 
     &__logo
       grid-row: 1
