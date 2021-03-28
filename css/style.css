@@ -506,6 +506,13 @@ template {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+  .hotel-sliders {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 728px;
+    height: 450px; }
   .hotel-slider {
     position: relative;
     border-radius: 8px;
