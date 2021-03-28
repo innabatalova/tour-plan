@@ -72,6 +72,15 @@
     &-grid
       flex-direction: column
 
+    &-sliders
+
+      &__item
+        margin-bottom: 30px
+
+    &-coordinates
+      flex-direction: row
+      margin-top: 30px
+
     &-slider
 
       &__item
@@ -100,6 +109,18 @@
       font-size: 30px
       line-height: 38px
       margin-bottom: 50px
+
+    &-sliders
+      &__item
+        max-width: 580px
+
+      &__button
+        top: 45%
+
+        &--prev
+          left: 83px
+        &--next
+          right: 83px
 
     &-slider
       &__item
@@ -323,6 +344,10 @@
         order: -1
         margin-left: 0
 
+    &-sliders
+      &__button
+        z-index: 97
+
     &-slider
       &__button
         z-index: 97
@@ -481,6 +506,23 @@
 
     &-info
       padding-bottom: 30px
+
+    &-sliders
+      height: 179px
+
+      &__img
+        width: 96%
+
+      &__item
+        height: 179px
+        margin-bottom: 0
+
+        &:after
+          width: 96%
+
+    &-coordinates
+      width: 100%
+      flex-direction: column
 
     &-slider
       height: 179px
