@@ -1680,7 +1680,7 @@ template {
     min-height: 210px;
     margin-bottom: 20px; }
   .map {
-    min-width: 100%;
+    width: 100%;
     min-height: 172px; }
   .newsletter {
     height: 320px;
