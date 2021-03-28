@@ -1756,7 +1756,8 @@ template {
         margin-bottom: 25px;
         margin-top: 15px; }
       .footer__title--messto {
-        margin-top: 20px; }
+        margin-top: 20px;
+        align-self: start; }
     .footer__logo {
       grid-row: 1;
       grid-column: 1;
@@ -1793,7 +1794,7 @@ template {
     .footer__contact-form {
       display: flex;
       flex-direction: column;
-      width: 90%;
+      width: 100%;
       grid-row: 7;
       grid-column: 1;
       margin-top: 20px; }
