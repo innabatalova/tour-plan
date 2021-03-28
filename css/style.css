@@ -6,8 +6,11 @@ body {
   background-color: #F5FAFE;
   color: #333333; }
 
-a:hover {
-  color: #D3D3D3; }
+a {
+  text-decoration: none;
+  color: inherit; }
+  a:hover {
+    color: #D3D3D3; }
 
 img {
   max-width: 100%; }
@@ -1620,7 +1623,7 @@ template {
     height: 40px;
     margin-bottom: 15px; } }
 
-@media (max-height: 576px) {
+@media (max-height: 576px) and (min-width: 540px) {
   .modal__dialog {
     width: 478px;
     max-height: 90%;
