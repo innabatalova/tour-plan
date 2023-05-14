@@ -1,13 +1,20 @@
 # tour-plan
 
-Tour Plan
+Верстка интерфейса адаптивная. Подключен php-mailer для отправки обратной связи.
+Посмотреть сейчас  https://joyful-nasturtium-2fe158.netlify.app/
 
-Учебный проект для практики на курсе Веб Старт от Glo Academy. Автор курса — Артем Исламов.
+# Technologies used
+-HTML
+-SASS
+-PHP
+-AOS.JS
+-JQUERY/JQUERY-MASK
+-PARALLAX
+-slider SWIPER
+-YANDEX-MAP
 
-Проект выполняет
+# Install and start
+Запустить компиляцию sass. Запустить на локальном сервере.
 
-Баталова Инна. Двенадцатый поток курса Веб Старт. Тариф "Полный фарш" с куратором.
-
-Куратор
-
-Проненко Артем
+# Link to deploy
+https://joyful-nasturtium-2fe158.netlify.app/
